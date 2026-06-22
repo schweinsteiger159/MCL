@@ -12,7 +12,7 @@ pg = st.navigation([
     st.Page(
         "pages/3_PDF_Reorder.py",
         title="Caleres sort theo SSCC"
-    ),git
+    ),
     
     st.Page(
         "pages/4_PDF_Reorder_CTN.py",
