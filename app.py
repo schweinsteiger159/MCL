@@ -1,22 +1,24 @@
 import streamlit as st
 
-#run: streamlit run app.py or streamlit run MCL/app.py
+pg = st.navigation([
+    st.Page(
+        "pages/1_Read_Excel.py",
+        title="Test thử đọc file excel"
+    ),
+    st.Page(
+        "pages/2_Extra_Label.py",
+        title="Barbours Label Detail"
+    ),
+    st.Page(
+        "pages/3_PDF_Reorder.py",
+        title="Caleres sort theo SSCC"
+    ),git
+    
+    st.Page(
+        "pages/4_PDF_Reorder_CTN.py",
+        title="APS sort theo carton NO."
+    )
 
-st.set_page_config(
-    page_title="Warehouse System",
-    layout="wide"
-)
+])
 
-st.title("Warehouse Management System")
-
-st.page_link(
-    "pages/1_Read_Excel.py",
-    label="📄 Đọc file Excel"
-)
-
-
-st.page_link(
-    "pages/2_Extra_Label.py",
-    label="🏷️ Extra Label",
-    icon="🏷️"
-)
+pg.run()
